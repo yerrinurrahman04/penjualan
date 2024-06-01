@@ -30,7 +30,7 @@ class User extends CI_Controller {
         if($this->db->affected_rows()>0){
             $this->session->set_flashdata("success","Data User Berhasil Disimpan");
         }
-        redirected('user');
+        redirect('user');
     }
 
     public function getedit($id){
